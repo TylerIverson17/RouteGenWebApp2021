@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RouteProject-JavaWebApp:war">
+    <output-path>$PROJECT_DIR$/RouteProject-JavaWebApp/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>RouteProject-JavaWebApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="RouteProject-JavaWebApp-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="RouteProject-JavaWebApp:war exploded" />
+    </root>
+  </artifact>
+</component>
