@@ -16,8 +16,6 @@ public class MyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
-        ArrayList<Integer> houselist = new ArrayList<Integer>();
-        ArrayList<Integer> streetlist = new ArrayList<Integer>();
 
         try (PrintWriter writer = response.getWriter()) {
             writer.println("<!DOCTYPE html><html>");

@@ -8,15 +8,14 @@ import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class ReadFile {
 
     public String filePath;
-    public ArrayList<Integer> houselist = new ArrayList<Integer>();
-    public ArrayList<Integer> streetlist = new ArrayList<Integer>();
+    public ArrayList<Integer> houselist = new ArrayList<>();
+    public ArrayList<Integer> streetlist = new ArrayList<>();
 
     public ReadFile(String filePath) throws Exception {
         this.getData(filePath);

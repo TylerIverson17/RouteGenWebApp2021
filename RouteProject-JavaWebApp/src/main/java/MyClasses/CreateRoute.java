@@ -3,21 +3,15 @@ package MyClasses;
 My class - Tyler Iverson
  */
 
-import javax.swing.*;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.*;
 
 public class CreateRoute {
 
     //Data
     public String filePath = "..\\Addresses.txt";
-    public LinkedList<String> organizedData = new LinkedList<String>();
-    public ArrayList<Integer> houselist = new ArrayList<Integer>();
-    public ArrayList<Integer> streetlist = new ArrayList<Integer>();
-    public String tryMe;
-    GuidenceSystem Gs = new GuidenceSystem();
-    ShortestPath shortest = new ShortestPath();
+    public LinkedList<String> organizedData;
+    public ArrayList<Integer> houselist;
+    public ArrayList<Integer> streetlist;
 
 
     //take in the linked list from ReadFile and sort it in a meaningful way
@@ -37,16 +31,6 @@ public class CreateRoute {
 
 
 
-    }
-
-    public void getOrganizedString(){
-        LinkedList<String> data = new LinkedList<>();
-        for(String s : Gs.getDirectionStringOutput()){
-            System.out.println("HELP!!!!");
-            data.add(s);
-        }
-        organizedData = data;
-        //return data;
     }
 
 

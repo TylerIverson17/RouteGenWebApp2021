@@ -101,9 +101,9 @@ public class GuidenceSystem {
 	int floornexthouse = 0;
 	boolean travelWest = true;
 
-	LinkedList<String> directionStringOutput = new LinkedList<String>();
-	String tempDirections;
-	ShortestPath shortest = new ShortestPath();
+	public LinkedList<String> directionStringOutput = new LinkedList<>();
+	private String tempDirections;
+	public ShortestPath shortest = new ShortestPath();
 
 	public GuidenceSystem() {
 
