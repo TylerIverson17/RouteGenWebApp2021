@@ -33,8 +33,6 @@ public class MyServlet extends HttpServlet {
             writer.println("<p id = \"addresses\">");
             //------------------------------------------------
             CreateRoute newRoute = new CreateRoute();
-            //newRoute.getOrganizedString();
-            //writer.println("<p>HELP" + newRoute.organizedData + "</p>");
             //-------------------------------------------------
             // Print the open to the rows and columns and add them onto the string before
             // Printing to the page
@@ -43,14 +41,8 @@ public class MyServlet extends HttpServlet {
             writer.println("<ul>");
             // Right before here the temp holds the organized string to display to the browser the addresses
             // String uses a "|" as a delimiter
-            //StringTokenizer tokenizer = new StringTokenizer(temp,"|");
-            //while(tokenizer.hasMoreTokens()){
-                //String aAddress = tokenizer.nextToken();
-               // aAddress = "<li>" + aAddress + "</li>";
-                //writer.println(aAddress);
-            //}
+
             for(String s : newRoute.organizedData){
-                writer.println("<p>HELP</p>");
                 s = "<li>" + s + "</li>";
                 writer.println(s);
             }

@@ -21,23 +21,6 @@ public class Driver {
         CreateRoute newRoute = new CreateRoute();
 
 
-
-
-
-        // From my project---------------------------------------------
-        /*
-        //Data
-        // String filePath = "src\main\java\Addresses.txt";
-
-        //Read from file and create a meaningful route
-        CreateRoute newRoute = new CreateRoute();
-
-        // Test the linked list
-        for(Address r : newRoute.organizedData) {
-            System.out.println(r.toString());
-        }
-
-         */
     }
 }
 
