@@ -101,15 +101,9 @@ public class GuidenceSystem {
 	int floornexthouse = 0;
 	boolean travelWest = true;
 
-	//linkedList of directions(Singleton Object in Driver class) for output
-	LinkedList<Directions> directionOutput = new LinkedList<Directions>();
 	LinkedList<String> directionStringOutput = new LinkedList<String>();
-	Directions currentDirection;
 	String tempDirections;
-	//GuidenceSystem Gs = new GuidenceSystem();
 	ShortestPath shortest = new ShortestPath();
-	ArrayList<Integer> houselist = new ArrayList<Integer>();
-	ArrayList<Integer> streetlist = new ArrayList<Integer>();
 
 	public GuidenceSystem() {
 
