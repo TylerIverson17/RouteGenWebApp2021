@@ -1,17 +1,22 @@
 package MyClasses;
-
+/*
+Tyler's class for choosing an external file.
+    getData method is what is called in order to read an exernal file from CreateRoute class
+           Adds the data to a linked list with address objects
+ */
 import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class ReadFile {
 
-    public LinkedList<Address> dataList = new LinkedList<Address>();
     public String filePath;
-    public int count;
+    public ArrayList<Integer> houselist = new ArrayList<Integer>();
+    public ArrayList<Integer> streetlist = new ArrayList<Integer>();
 
     public ReadFile(String filePath) throws Exception {
         this.getData(filePath);
@@ -19,6 +24,7 @@ public class ReadFile {
 
     public void getData(String filePath) throws Exception{
 
+        // Tyler's file selector - Java default package
         File file;
         Scanner fileIn;
         int response;
@@ -34,14 +40,11 @@ public class ReadFile {
                 if(file.isFile()){
                     while(fileIn.hasNextLine()){
                         String data = fileIn.nextLine();
-                        //Create address obj from strings coming from the file
                         StringTokenizer tokenizer = new StringTokenizer(data);
                         int houseNumToken = Integer.parseInt(tokenizer.nextToken());
-                        String streetNameToken = tokenizer.nextToken();
-                        String streetTypeToken = tokenizer.nextToken();
-                        Address addressData = new Address(houseNumToken,streetNameToken,streetTypeToken);
-                        this.dataList.add(addressData);
-                        count++;
+                        int streetNameToken = Integer.parseInt(tokenizer.nextToken());
+                        houselist.add(houseNumToken);
+                        streetlist.add(streetNameToken);
                     }
                 }else{
                     System.out.println("that was not a file!!!");

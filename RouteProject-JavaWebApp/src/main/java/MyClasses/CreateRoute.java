@@ -1,60 +1,52 @@
 package MyClasses;
+/*
+My class - Tyler Iverson
+ */
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.LinkedList;
+import javax.swing.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
 
 public class CreateRoute {
 
     //Data
     public String filePath = "..\\Addresses.txt";
-    public LinkedList<Address> organizedData = new LinkedList<Address>();
-
+    public LinkedList<String> organizedData = new LinkedList<String>();
+    public ArrayList<Integer> houselist = new ArrayList<Integer>();
+    public ArrayList<Integer> streetlist = new ArrayList<Integer>();
+    public String tryMe;
+    GuidenceSystem Gs = new GuidenceSystem();
+    ShortestPath shortest = new ShortestPath();
 
 
     //take in the linked list from ReadFile and sort it in a meaningful way
     public CreateRoute() throws Exception {
-
-        boolean foundStreetName = false;
-        boolean foundSmallestNumber = false;
-
         ReadFile fileReader = new ReadFile(filePath);
+        this.houselist = fileReader.houselist;
+        this.streetlist = fileReader.streetlist;
 
-        // Starting the process of inserting and sorting with custom compare method override
-        for(Address fileAddress : fileReader.dataList){
+        GuidenceSystem Gs = new GuidenceSystem();
+        ShortestPath shortest = new ShortestPath();
 
-            organizedData.add(fileAddress);
+        Gs.createDirections(shortest.Findshortest(houselist, streetlist));
 
-            //compare fileAddress against organizedData to find insertion point
-            Collections.sort(organizedData, new Comparator<Address>() {
-                @Override
-                public int compare(Address o1, Address o2) {
+        System.out.println("HELLO" + Gs.getDirectionStringOutput());
 
-                    String streetName1 = o1.streetName + o1.streetType;
-                    String streetName2 = o2.streetName + o2.streetType;
-                    int streetNameCmp = streetName1.compareTo(streetName2);
-                    if (streetNameCmp != 0){
-                        return streetNameCmp;
-                    }
-                    Integer houseNum1 = o1.houseNumber;
-                    Integer houseNum2 = o2.houseNumber;
-                    int houseNumCmp = houseNum1.compareTo(houseNum2);
-                    if (houseNumCmp != 0){
-                        return houseNumCmp;
-                    }
-                    return 0;
-                }
-            });
-        }
+        organizedData = Gs.getDirectionStringOutput();
+
+
 
     }
 
-    public String getOrganizedString(){
-        String data = "";
-        for(Address r : organizedData){
-            data += r.toString() + "|";
+    public void getOrganizedString(){
+        LinkedList<String> data = new LinkedList<>();
+        for(String s : Gs.getDirectionStringOutput()){
+            System.out.println("HELP!!!!");
+            data.add(s);
         }
-        return data;
+        organizedData = data;
+        //return data;
     }
 
 

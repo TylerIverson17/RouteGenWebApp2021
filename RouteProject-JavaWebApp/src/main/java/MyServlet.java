@@ -1,4 +1,4 @@
-import MyClasses.CreateRoute;
+import MyClasses.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 @WebServlet(name = "MyServlet", value = "/MyServlet")
@@ -15,6 +16,8 @@ public class MyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
+        ArrayList<Integer> houselist = new ArrayList<Integer>();
+        ArrayList<Integer> streetlist = new ArrayList<Integer>();
 
         try (PrintWriter writer = response.getWriter()) {
             writer.println("<!DOCTYPE html><html>");
@@ -28,8 +31,11 @@ public class MyServlet extends HttpServlet {
             writer.println("<h1>Follow the route for directions</h1>");
             writer.println("</div>");
             writer.println("<p id = \"addresses\">");
+            //------------------------------------------------
             CreateRoute newRoute = new CreateRoute();
-            String temp = newRoute.getOrganizedString();
+            //newRoute.getOrganizedString();
+            //writer.println("<p>HELP" + newRoute.organizedData + "</p>");
+            //-------------------------------------------------
             // Print the open to the rows and columns and add them onto the string before
             // Printing to the page
             writer.println("<div class = \"row\">");
@@ -37,11 +43,16 @@ public class MyServlet extends HttpServlet {
             writer.println("<ul>");
             // Right before here the temp holds the organized string to display to the browser the addresses
             // String uses a "|" as a delimiter
-            StringTokenizer tokenizer = new StringTokenizer(temp,"|");
-            while(tokenizer.hasMoreTokens()){
-                String aAddress = tokenizer.nextToken();
-                aAddress = "<li>" + aAddress + "</li>";
-                writer.println(aAddress);
+            //StringTokenizer tokenizer = new StringTokenizer(temp,"|");
+            //while(tokenizer.hasMoreTokens()){
+                //String aAddress = tokenizer.nextToken();
+               // aAddress = "<li>" + aAddress + "</li>";
+                //writer.println(aAddress);
+            //}
+            for(String s : newRoute.organizedData){
+                writer.println("<p>HELP</p>");
+                s = "<li>" + s + "</li>";
+                writer.println(s);
             }
             writer.println("</ul>");
             writer.println("</div>");

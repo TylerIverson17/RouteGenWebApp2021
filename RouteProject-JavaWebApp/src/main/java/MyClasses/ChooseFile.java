@@ -1,5 +1,7 @@
 package MyClasses;
-
+/*
+My class - Tyler Iverson
+ */
 import javax.swing.*;
 import java.io.File;
 import java.util.Scanner;
