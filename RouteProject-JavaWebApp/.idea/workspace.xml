@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99fd6a5-c402-41d8-ac9e-4e71668799bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyClasses/CreateRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyClasses/CreateRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyClasses/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyClasses/ReadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyClasses/CreateRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyClasses/CreateRoute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyClasses/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyClasses/ReadFile.class" afterDir="false" />
-    </list>
+    <list default="true" id="d99fd6a5-c402-41d8-ac9e-4e71668799bf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +149,7 @@
       <updated>1611631616497</updated>
       <workItem from="1611631617760" duration="194000" />
       <workItem from="1611703274204" duration="71000" />
-      <workItem from="1611703426776" duration="1372000" />
+      <workItem from="1611703426776" duration="1697000" />
     </task>
     <servers />
   </component>
