@@ -17,11 +17,11 @@ public class ReadFile {
     public ArrayList<Integer> houselist = new ArrayList<>();
     public ArrayList<Integer> streetlist = new ArrayList<>();
 
-    public ReadFile(String filePath) throws Exception {
-        this.getData(filePath);
+    public ReadFile() throws Exception {
+        this.getData();
     }
 
-    public void getData(String filePath) throws Exception{
+    public void getData() throws Exception{
 
         // Tyler's file selector - Java default package
         File file;

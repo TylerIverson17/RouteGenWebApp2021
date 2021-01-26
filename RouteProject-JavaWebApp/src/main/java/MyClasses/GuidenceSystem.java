@@ -397,7 +397,7 @@ public class GuidenceSystem {
 		}
 
 		System.out.print("Travel to: " + nextrealhousenumber + " " + nextstreet);
-		tempDirections += "|" + "Travel to: " + nextrealhousenumber + " " + nextstreet;
+		tempDirections += "Travel to: " + nextrealhousenumber + " " + nextstreet;
 		if (nextstreet % 10 == 1) {
 			System.out.print("st street\n");
 			tempDirections += "st street\n";
@@ -424,25 +424,25 @@ public class GuidenceSystem {
 		// if heading NORTH and house is ODD numbered then the house is on your LEFT
 		if (housediff % 2 == 1 && isNorth) {
 			System.out.println("House " + nextrealhousenumber + " will be on your LEFT");
-			tempDirections += "|" + "House " + nextrealhousenumber + " will be on your LEFT";
+			tempDirections += "House " + nextrealhousenumber + " will be on your LEFT";
 		}
 
 		// if heading NORTH and house is EVEM numbered then the house is on your RIGHT
 		if (housediff % 2 == 0 && isNorth){
 			System.out.println("House " + nextrealhousenumber + " will be on your RIGHT");
-			tempDirections += "|" + "House " + nextrealhousenumber + " will be on your RIGHT";
+			tempDirections += "House " + nextrealhousenumber + " will be on your RIGHT";
 		}
 		
 		// if heading SOUTH and house is ODD numbered then the house is on your RIGHT
 		if (housediff % 2 == 1 && !isNorth) {
 			System.out.println("House " + nextrealhousenumber + " will be on your RIGHT");
-			tempDirections += "|" + "House " + nextrealhousenumber + " will be on your RIGHT";
+			tempDirections +=  "House " + nextrealhousenumber + " will be on your RIGHT";
 		}
 
 		// if heading SOUTH and house is EVEN numbered then the house is on your LEFT
 		if (housediff % 2 == 0 && !isNorth) {
 			System.out.println("House " + nextrealhousenumber + " will be on your LEFT");
-			tempDirections += "|" + "House " + nextrealhousenumber + " will be on your LEFT";
+			tempDirections +=  "House " + nextrealhousenumber + " will be on your LEFT";
 		}
 	}
 	
