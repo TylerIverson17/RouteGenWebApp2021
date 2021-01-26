@@ -58,13 +58,4 @@ public class ReadFile {
 
     }
 
-    public void setFilePath(String filePath){
-        this.filePath = filePath;
-    }
-
-
-
-    public static void main(String[] args) throws Exception{
-
-    }
 }
