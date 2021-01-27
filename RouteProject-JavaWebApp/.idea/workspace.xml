@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d99fd6a5-c402-41d8-ac9e-4e71668799bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyClasses/GuidenceSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyClasses/GuidenceSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -151,7 +157,7 @@
       <updated>1611631616497</updated>
       <workItem from="1611631617760" duration="194000" />
       <workItem from="1611703274204" duration="71000" />
-      <workItem from="1611703426776" duration="426000" />
+      <workItem from="1611703426776" duration="4473000" />
     </task>
     <servers />
   </component>
