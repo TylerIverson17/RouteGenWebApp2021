@@ -1,0 +1,24 @@
+Route starts at: 35 1st street
+Travel to: 55 2nd street
+Travel SOUTH past 2 house(s)
+Then go RIGHT 1 street(s)
+Then travel SOUTH past 0 houses(s)
+House 55 will be on your LEFT
+
+Route starts at: 55 2nd street
+Travel to: 27 2nd street
+travel NORTH past 14 houses
+House 27 will be on your RIGHT
+
+Route starts at: 27 2nd street
+Travel to: 25 2nd street
+travel NORTH past 1 houses
+House 25 will be on your LEFT
+
+Route starts at: 25 2nd street
+Travel to: 100 5th street
+Travel SOUTH past 7 house(s)
+Then go RIGHT 3 street(s)
+Then travel SOUTH past 23 houses(s)
+House 100 will be on your RIGHT
+
