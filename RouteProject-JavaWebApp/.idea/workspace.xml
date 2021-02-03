@@ -10,11 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d99fd6a5-c402-41d8-ac9e-4e71668799bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_tyleriverson_RouteGeneration_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RouteProject_JavaWebApp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RouteProject_JavaWebApp_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteProject-JavaWebApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RouteProject-JavaWebApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RouteProject-JavaWebApp-1.0-SNAPSHOT/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -172,7 +174,7 @@
       <workItem from="1611631617760" duration="194000" />
       <workItem from="1611703274204" duration="71000" />
       <workItem from="1611703426776" duration="4473000" />
-      <workItem from="1612310468851" duration="4364000" />
+      <workItem from="1612310468851" duration="5602000" />
     </task>
     <servers />
   </component>

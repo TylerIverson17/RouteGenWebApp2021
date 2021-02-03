@@ -1,4 +1,5 @@
 import MyClasses.*;
+import MyClasses.CreateRoute;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,9 +31,10 @@ public class MyServlet extends HttpServlet {
 
                     "</head>\n" +
                     "\n" +
-                    "<body>\n" +
-
-                    "    <div id=\"wrapper\">\n" +
+                    "<body>\n");
+            //==========================================================================================================================
+            CreateRoute newRoute = new CreateRoute();
+                    writer.println("    <div id=\"wrapper\">\n" +
                     "        <div id=\"panel\">\n" +
                     "            <div id=\"message\"></div>\n" +
                     "            <div id=\"selected-houses\">\n" +
@@ -40,8 +42,17 @@ public class MyServlet extends HttpServlet {
                     "            </div>\n" +
                     "            <div id=\"panel-actions\">\n" +
                     "                <button id=\"done\" hidden disabled>Done</button>\n" +
-                    "            </div>\n" +
-                    "        </div>\n" +
+                    "            </div>\n");
+                    writer.println("<ul>");
+                    // Right before here the temp holds the organized string to display to the browser the addresses
+                    // String uses a "|" as a delimiter
+
+                    for(String s : newRoute.organizedData){
+                        s = "<li>" + s + "</li>";
+                        writer.println(s);
+                    }
+                    writer.println("</ul>");
+                    writer.println("        </div>\n" +
                     "    \n" +
                     "        <div id=\"yard\">\n" +
                     "    \n" +
