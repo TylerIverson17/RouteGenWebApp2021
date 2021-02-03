@@ -11,13 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d99fd6a5-c402-41d8-ac9e-4e71668799bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/MyServlet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RouteProject-JavaWebApp-1.0-SNAPSHOT/MyServlet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RouteProject-JavaWebApp-1.0-SNAPSHOT/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RouteProject-JavaWebApp-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RouteProject-JavaWebApp-1.0-SNAPSHOT/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +172,7 @@
       <workItem from="1611631617760" duration="194000" />
       <workItem from="1611703274204" duration="71000" />
       <workItem from="1611703426776" duration="4473000" />
-      <workItem from="1612310468851" duration="1165000" />
+      <workItem from="1612310468851" duration="4364000" />
     </task>
     <servers />
   </component>
