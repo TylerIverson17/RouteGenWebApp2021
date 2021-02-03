@@ -1,0 +1,108 @@
+body {
+    background-image: url(../../img/green.jpg);
+    background-size: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#yard{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+/* Panel */
+#panel{
+    width: 20%;
+    background-color: #ffffff;
+    box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Sreet */
+.street {
+    flex: 1;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.street:first-child{
+    margin-left: 10px;
+}
+
+.street:last-child{
+    margin-right: 10px;
+}
+
+.street:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    background: #a7a7a7;
+    z-index: 1;
+    top: 0;
+    left: calc(50% - 5px);
+}
+
+/*
+.street:after {
+    content: '';
+    display: block;
+    border: 1px dashed #fff;
+    height: 100%;
+    width: 0px;
+    top: 0;
+    left: calc(50% - 1px);
+    position: absolute;
+    z-index: 2;
+} */
+
+/* Home */
+.home {
+    float: left;
+    width: calc(50% - 20px);
+    margin: 10px;
+    height: 50px;
+}
+
+.home::after{
+    content: '';
+    background-image: url('../../img/home.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: block;
+    transform: rotate(90deg);
+}
+
+.home:nth-of-type(odd)::after{
+    float: right;
+    transform: rotate(-90deg);
+}
+
+/* Road */
+.road {
+    height: 20px;
+    width: 100%;
+    background-color: #a7a7a7;
+    float: left;
+    position: relative;
+}
+
+.road:after{
+    display: block;
+    content: '';
+    width: 100%;
+    border: 1px dashed #fff;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+}
